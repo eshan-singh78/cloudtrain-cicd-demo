@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Cloud Training Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="showHome()">
+                <i class="fas fa-cloud"></i> CI/CD Demo
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <div id="home-section" class="hero-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body text-center p-5">
+                                <div class="cloud-icon">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                </div>
+                                <h1 class="display-4 fw-bold text-primary mb-4">
+                                    Hi! This is Demo of CI/CD for Cloud Train
+                                </h1>
+                                <p class="lead text-muted mb-4">
+                                    Welcome to our interactive demonstration of Continuous Integration and Continuous Deployment practices in cloud environments. 
+                                    Ready to explore some DevOps humor?
+                                </p>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button onclick="showMeme()" class="btn btn-custom btn-lg">
+                                        <i class="fas fa-laugh"></i> Get DevOps Meme
+                                    </button>
+                                </div>
+                                
+                                <div class="row mt-5">
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <i class="fas fa-code-branch fa-2x text-info mb-3"></i>
+                                            <h5>Continuous Integration</h5>
+                                            <p class="text-muted small">Automated testing and integration</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <i class="fas fa-rocket fa-2x text-success mb-3"></i>
+                                            <h5>Continuous Deployment</h5>
+                                            <p class="text-muted small">Automated deployment pipeline</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <i class="fas fa-cloud fa-2x text-warning mb-3"></i>
+                                            <h5>Cloud Native</h5>
+                                            <p class="text-muted small">Scalable cloud infrastructure</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meme Section -->
+        <div id="meme-section" class="hero-section" style="display: none;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body text-center p-5">
+                                <h2 class="fw-bold text-primary mb-4">
+                                    <i class="fas fa-laugh-beam"></i> DevOps Meme Time!
+                                </h2>
+                                
+                                <div id="meme-container" class="meme-container mb-4">
+                                    <div class="placeholder-container">
+                                        <div class="border rounded p-5 bg-light">
+                                            <i class="fas fa-image fa-4x text-muted mb-3"></i>
+                                            <h4 class="text-muted">Meme Placeholder</h4>
+                                            <p class="text-muted">Add your DevOps memes to the <code>assets/memes/</code> folder!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button onclick="getRandomMeme()" class="btn btn-custom">
+                                        <i class="fas fa-sync-alt"></i> Get Another Meme
+                                    </button>
+                                    <button onclick="showHome()" class="btn btn-outline-primary">
+                                        <i class="fas fa-home"></i> Back to Home
+                                    </button>
+                                </div>
+                                
+                                <div class="mt-4 p-3 bg-light rounded">
+                                    <small class="text-muted">
+                                        <i class="fas fa-info-circle"></i>
+                                        This demo showcases automated deployment of web applications using CI/CD pipelines in cloud environments.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
